@@ -1,5 +1,4 @@
 import * as React from "react";
-import { Link } from "gatsby";
 import Navigation from "./navigation";
 import { container, heading } from "./layout.module.css";
 
