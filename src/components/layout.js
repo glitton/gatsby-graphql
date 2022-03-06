@@ -13,8 +13,7 @@ const Layout = ({ pageTitle, children }) => {
       }
     }
   `);
-  console.log(data);
-  console.log("pagetitle", children);
+
   return (
     <div className={container}>
       <Navigation />
