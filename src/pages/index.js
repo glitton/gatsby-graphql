@@ -3,7 +3,7 @@ import Layout from "../components/layout";
 
 const IndexPage = () => {
   return (
-    <Layout>
+    <Layout pageTitle="Home">
       <h1>Welcome to this Gatsby and Later Session</h1>
       <p>We are here to learn about graphQL and Gatsby!</p>
     </Layout>

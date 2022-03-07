@@ -1,15 +1,10 @@
 import React from "react";
 import { Link } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image";
 import { navLinks, navLinkItem, navLinkText } from "./layout.module.css";
 
 const Navigation = () => {
   return (
     <nav>
-      <div>
-        <StaticImage alt="Gatsby logo" src="../images/gatsby.png" />
-        <StaticImage alt="GraphQL logo" src="../images/graphql.png" />
-      </div>
       <ul className={navLinks}>
         <li className={navLinkItem}>
           <Link to="/" className={navLinkText}>
@@ -19,6 +14,11 @@ const Navigation = () => {
         <li className={navLinkItem}>
           <Link to="/about" className={navLinkText}>
             About
+          </Link>
+        </li>
+        <li className={navLinkItem}>
+          <Link to="/all-blogs" className={navLinkText}>
+            Blogs
           </Link>
         </li>
       </ul>
