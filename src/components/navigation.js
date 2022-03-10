@@ -16,6 +16,11 @@ const Navigation = () => {
             About
           </Link>
         </li>
+        <li className={navLinkItem}>
+          <Link to="/blogs" className={navLinkText}>
+            Blogs
+          </Link>
+        </li>
       </ul>
     </nav>
   );
