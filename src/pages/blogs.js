@@ -8,7 +8,7 @@ const AllBlogs = ({ data }) => {
       <h3>Blog Posts</h3>
       {data.allContentfulBlogPost.nodes.map((node) => {
         return (
-          <article key={node.id}>
+          <article key={node.description.id}>
             <li>
               {node.title} Published: {node.publishDate}
               <p>{node.description.description}</p>
