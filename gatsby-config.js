@@ -45,7 +45,7 @@ module.exports = {
     description:
       "The leading visual marketing platform that allows you to plan, schedule, publish, and measure the results of your instagram and social media posts.",
     siteUrl: "https://later.com", // No trailing slash allowed!
-    image: "/images/homepage/home_meta.png", // Path to your image you placed in the 'static' folder
+    image: "/images", // Path to your image you placed in the 'static' folder
     twitterUsername: "@latermedia",
   },
   plugins: [
