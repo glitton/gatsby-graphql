@@ -1,6 +1,6 @@
 import React from "react";
-import Layout from "../components/layout";
-import { graphql } from "gatsby";
+import Layout from "../../components/layout";
+import { graphql, Link } from "gatsby";
 
 const AllBlogs = ({ data }) => {
   return (
@@ -10,7 +10,8 @@ const AllBlogs = ({ data }) => {
         return (
           <article key={node.description.id}>
             <li>
-              {node.title} Published: {node.publishDate}
+              <Link to={`/blogs/${node.slug}`}>{node.title}</Link>
+              Published: {node.publishDate}
               <p>{node.description.description}</p>
             </li>
           </article>
@@ -30,6 +31,7 @@ export const query = graphql`
           description
           id
         }
+        slug
       }
     }
   }
