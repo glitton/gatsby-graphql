@@ -10,7 +10,7 @@ const AllBlogs = ({ data }) => {
         return (
           <article key={node.description.id}>
             <li>
-              <Link to={`/blogs/${node.slug}`}>{node.title}</Link>
+              <Link to={`/blogs/${node.slug}`}>{node.title}</Link> <br />{" "}
               Published: {node.publishDate}
               <p>{node.description.description}</p>
             </li>
